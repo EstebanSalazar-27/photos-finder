@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.form__search-input {
+    padding: .5rem;
+    width: 500px;
+    height: 40px;
+    border: 1.5px solid rgb(3, 140, 252);
+    outline: none;
+    border-radius: 2px;
+    transition: 300ms ease;
+
+
+    &:focus {
+        transform: scale(1.050);
+        box-shadow: 1px 1px 5px #ccc;
+    }
+}

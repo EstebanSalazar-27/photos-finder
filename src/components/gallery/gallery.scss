@@ -1,0 +1,62 @@
+.gallery-cont {
+    columns: 3 250px;
+    gap: .300rem;
+
+
+
+}
+
+.gallery_photo {
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: 400ms ease;
+  
+
+    cursor: pointer;
+
+    &:hover {
+
+
+        &::before {
+            background-color: rgba(9, 17, 37, 0.288);
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(9, 17, 37, 0.151);
+        z-index: -0;
+        transition: background 600ms ease;
+    }
+
+
+
+
+}
+
+.photo__description {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    text-transform: capitalize;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin-bottom: .250rem;
+  
+}
